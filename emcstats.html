@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- 14-9-2021 - Some very old index.html file I found in an old copy of emc stats code, very messy but does the job -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/e5b564a8-6218-4b5f-9687-9aca8915169b%2Femcstatslogo.png?v=1579742329749" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="buttonStyles.css">
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <script src="https://kit.fontawesome.com/228ebddc2f.js" crossorigin="anonymous"></script>
+  </head>
+<title>EarthMC Stats</title>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://cdn.discordapp.com/attachments/670060946206752788/671021912465473566/2019-04-02_20.44.27.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button"><img src="https://cdn.glitch.com/project-avatar/5bf8d5e2-f6b5-469a-9f2f-b384fa098bd2.png?1579889923309" height="46" width="46"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-flat-nephritis">ABOUT</a>
+      <a href="#links" class="w3-bar-item w3-button w3-flat-nephritis"><i class="fa fa-link"></i> LINKS</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-flat-nephritis"><i class="fab fa-discord"></i> CONTACT</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-white">ABOUT</a>
+  <a href="#privacy" onclick="w3_close()" class="w3-bar-item w3-button w3-white">PRIVACY</a>
+<!--  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button w3-white">ROADMAP</a> -->
+  <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-white">LINKS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-white">CONTACT</a>
+</nav>
+  
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-mid" id="home">
+  <div class="w3-display-topleft w3-xlarge" style="padding:160px">
+    <span class="w3-xxlarge w3-display-top">EarthMC Stats</span><br>
+    <span class="w3-xlarge">A discord bot for all your EarthMC needs.</span>
+    <br>
+    <br>
+    <button onclick="window.location='https://bit.do/earthmcstats';" class="inviteButton w3-padding-large w3-xxlarge"><i class="fab fa-discord"></i> Invite</button>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i><a href="https://discord.gg/pUyQMVC" class="fa fa-https://cdn.discordapp.com/attachments/574285480351498249/671027674600308756/download.png w3-hover-opacity"></a></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container w3-flat-midnight-blue" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE BOT</h3>
+  <p class="w3-center w3-large">An overlook at what EarthMC Stats can do.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Townless Player Tracker</p>
+      <p>Instantly get all townless players on the server. 100% accuracy.</p>
+    </div>
+    <div class="w3-quarter">
+      <p class="w3-large">Search Resident Profiles</p>
+      <p>Get info on anyone anywhere who is in a town.</p>
+    </div>
+    <div class="w3-quarter">
+      <p class="w3-large">Town Information</p>
+      <p>Using /town you can get instant & up to date info about any town on the Server.</p>
+    </div>
+    <div class="w3-quarter">
+      <p class="w3-large">Nation Information</p>
+      <p>Get info about all nations currently existing simply by using /nation.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Links Section -->
+<div class="w3-container w3-center w3-flat-wet-asphalt" style="padding:128px 16px" id="links">
+  <h3>Links</h3>
+  <p class="w3-large">Invite the bot to your discord and/or join our development server!</p>
+  <div style="margin-top:48px">
+    <button onclick="window.location='https://warriorrrr.github.io/invite';" class="greenButton"><i class="fab fa-discord"></i> Invite EarthMC Stats</button>
+    <br>
+    <br>
+    <button onclick="window.location='https://discord.gg/MteFjeBprS';" class="greenButton"><i class="fab fa-discord"></i> Development Server</button>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-flat-midnight-blue" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Get in touch by dropping by on Discord.</p>
+  <div style="margin-top:48px">
+    <p class="w3-center"><i class="fab fa-discord fa-fw w3-xxlarge w3-margin-right"> </i> Discord: Warrior#4676</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-flat-nephritis"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() 
+{
+    if (mySidebar.style.display === 'block') 
+    {
+        mySidebar.style.display = 'none';
+    } 
+    else 
+    {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() 
+{
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
